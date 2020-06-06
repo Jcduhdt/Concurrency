@@ -60,7 +60,7 @@ public class WaitNotify {
                 flag = false;
                 SleepUtils.second(5);
                 // 再次加锁
-                // 这是锁可重入了？'=[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
+                // 这是锁可重入了？
                 synchronized (lock){
                     System.out.println(Thread.currentThread() + "hold lock again. sleep@"
                             + new SimpleDateFormat("HH:mm:ss").format(new Date()));
